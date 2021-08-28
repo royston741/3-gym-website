@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <style>  
+
+        body{
+            font-family: 'Anton', sans-serif;
+            color: seashell;
+            margin: 0px;
+            padding: 0px; 
+            background: url('gym3.jpg');
+
+            /* filter: invert(100%);  */
+
+            
+            /* height: 100px;  */
+
+            }
+
+        .left{
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            display: inline-block;
+            /* border:2px solid red ; */
+            }
+   
+        .left img{
+            /* opposite to the color used in an image  */
+            /* filter: invert(100%);  */
+             /* height: 100px;  */
+            width: 120px;
+        }    
+
+        .left div{
+            /* to brong the text at the center  */
+            text-align: center;
+
+            line-height:19px ;
+            font-size:20px ;
+        }
+        .mid{
+            /* for bringing anything into center following are reqirements */
+            width: 35%;
+            margin:29px auto ;
+            display: block;
+
+
+            /* border:2px solid rgb(0, 255, 21) ; */
+            }
+
+        .right{
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 33px;
+            /* border:2px solid rgb(47, 0, 255) ; */
+            }
+
+        .navbar{
+            display: inline-block;
+
+        }
+        
+        .navbar li{
+            display: inline-block;
+            font-size: 23px;
+
+        }
+
+
+        .navbar li a{
+            color: seashell;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,.navbar li a:active{
+            color: slategray;
+            text-decoration: underline;
+        }
+        
+        .btn{
+            font-family: 'Anton', sans-serif;
+            margin: 0px 9px;
+            color: snow;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid rgb(128, 128, 128);
+            border-radius: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            background-color: rgb(61, 58, 58);
+        }
+
+        .container{
+            border: 2px solid rgb(255, 255, 255);
+            margin:106px 80px ;
+            padding:75px ;
+            width:33% ;
+            border-radius:28px ;
+            top: 1000px;
+
+        }
+
+        .first-group input{
+            font-family: 'Anton', sans-serif;
+            text-align:center ;
+            display: block;
+            width: 400px;
+            padding: 1px;
+            border: 2px solid rgb(0, 0, 0);
+            margin:10px auto;
+            font-size: 23px;
+            border-radius: 8px;
+
+        }
+
+        .container h1{
+            text-align: center;
+        }
+
+        .container button{
+            display: block;
+            width: 80%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <header class="header"> 
+
+        <!-- for box lobo -->
+        <div class="left">
+            <img src="lobo.jpg" alt="">
+            <div>Royston fitness</div>
+        </div>
+        
+        <!-- for putting navbar contents on left side -->
+        <div class="mid"> 
+            <ul class="navbar">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="" >Services</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact U   s</a></li>
+
+            </ul>
+        </div>
+
+        <!-- for putting search -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email Us</button>
+            
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym now</h1>
+        <form action="maga.php">
+            <div class="first-group">
+                <input type=" text" name="" placeholder="Enter your name">
+            </div>
+
+            <div class="first-group">
+                <input type=" text" name="" placeholder="Enter your age">
+            </div>
+
+            <div class="first-group">
+                <input type=" text" name="" placeholder="Enter your gender">
+            </div>
+
+            <div class="first-group">
+                <input type=" text" name="" placeholder="Enter your locality">
+            </div>
+
+            <button class="btn">Submit</button>
+
+        </form>
+    </div>
+    
+    
+</body>
+</html>
